@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self?.locationService.getLocation()
             }
         }
-        
+        //
         locationService.newLocation = { [weak self] result in
             switch result {
             case .success(let location):
