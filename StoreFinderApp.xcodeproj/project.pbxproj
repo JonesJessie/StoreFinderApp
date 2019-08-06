@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,19 @@
 		198FFAAA22F65F7D0055FC3E /* StoreFinderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAA822F65F7D0055FC3E /* StoreFinderApp.xcdatamodeld */; };
 		198FFAAC22F65F7F0055FC3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198FFAAB22F65F7F0055FC3E /* Assets.xcassets */; };
 		198FFAAF22F65F7F0055FC3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198FFAAD22F65F7F0055FC3E /* LaunchScreen.storyboard */; };
+		198FFAB822F67EC90055FC3E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAB722F67EC90055FC3E /* BaseView.swift */; };
+		198FFABC22F682160055FC3E /* DetailsPlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFABB22F682160055FC3E /* DetailsPlacesView.swift */; };
+		198FFABE22F684080055FC3E /* DetailsPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFABD22F684080055FC3E /* DetailsPlacesViewController.swift */; };
+		198FFAC122F685140055FC3E /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAC022F685140055FC3E /* PlacesTableViewController.swift */; };
+		198FFAC422F6856A0055FC3E /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAC322F6856A0055FC3E /* PlacesTableViewCell.swift */; };
+		198FFAC822F6865C0055FC3E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAC722F6865C0055FC3E /* LocationView.swift */; };
+		198FFACA22F686F50055FC3E /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAC922F686F50055FC3E /* LocationViewController.swift */; };
+		198FFACD22F6897C0055FC3E /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFACC22F6897C0055FC3E /* LocationServices.swift */; };
+		198FFACF22F77A960055FC3E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFACE22F77A950055FC3E /* NetworkService.swift */; };
+		198FFAD122F7984B0055FC3E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 198FFAD022F7984B0055FC3E /* Podfile */; };
+		198FFAD322F79D4C0055FC3E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAD222F79D4C0055FC3E /* Models.swift */; };
+		198FFAD522F7BE150055FC3E /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAD422F7BE150055FC3E /* DetailsCollectionViewCell.swift */; };
+		2A450DAE670F5F23BD003425 /* Pods_StoreFinderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1133BB50E6E7D72F558A17 /* Pods_StoreFinderApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,21 @@
 		198FFAAB22F65F7F0055FC3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		198FFAAE22F65F7F0055FC3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198FFAB022F65F7F0055FC3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198FFAB722F67EC90055FC3E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		198FFABB22F682160055FC3E /* DetailsPlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPlacesView.swift; sourceTree = "<group>"; };
+		198FFABD22F684080055FC3E /* DetailsPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPlacesViewController.swift; sourceTree = "<group>"; };
+		198FFAC022F685140055FC3E /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		198FFAC322F6856A0055FC3E /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		198FFAC722F6865C0055FC3E /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		198FFAC922F686F50055FC3E /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		198FFACC22F6897C0055FC3E /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
+		198FFACE22F77A950055FC3E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		198FFAD022F7984B0055FC3E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		198FFAD222F79D4C0055FC3E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		198FFAD422F7BE150055FC3E /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D48ED1D0DF6DADCD59AD70B /* Pods-StoreFinderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreFinderApp.release.xcconfig"; path = "Target Support Files/Pods-StoreFinderApp/Pods-StoreFinderApp.release.xcconfig"; sourceTree = "<group>"; };
+		8B1133BB50E6E7D72F558A17 /* Pods_StoreFinderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreFinderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B9561B5DDD5566FACC85E5 /* Pods-StoreFinderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreFinderApp.debug.xcconfig"; path = "Target Support Files/Pods-StoreFinderApp/Pods-StoreFinderApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A450DAE670F5F23BD003425 /* Pods_StoreFinderApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +69,11 @@
 		198FFA9522F65F7D0055FC3E = {
 			isa = PBXGroup;
 			children = (
+				198FFAD022F7984B0055FC3E /* Podfile */,
 				198FFAA022F65F7D0055FC3E /* StoreFinderApp */,
 				198FFA9F22F65F7D0055FC3E /* Products */,
+				922FBD2DDBD5AA08599E622A /* Pods */,
+				5D280F47223E0E72D6118A65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,8 @@
 		198FFAA022F65F7D0055FC3E /* StoreFinderApp */ = {
 			isa = PBXGroup;
 			children = (
+				198FFACB22F6896A0055FC3E /* Services */,
+				198FFAB622F67EAF0055FC3E /* View */,
 				198FFAA122F65F7D0055FC3E /* AppDelegate.swift */,
 				198FFAA322F65F7D0055FC3E /* ViewController.swift */,
 				198FFAA522F65F7D0055FC3E /* Main.storyboard */,
@@ -67,6 +101,96 @@
 			path = StoreFinderApp;
 			sourceTree = "<group>";
 		};
+		198FFAB622F67EAF0055FC3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				198FFAC522F686310055FC3E /* Location */,
+				198FFABF22F684770055FC3E /* List */,
+				198FFAB922F681D80055FC3E /* Details */,
+				198FFAB722F67EC90055FC3E /* BaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		198FFAB922F681D80055FC3E /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				198FFABA22F681E20055FC3E /* Views */,
+				198FFABD22F684080055FC3E /* DetailsPlacesViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		198FFABA22F681E20055FC3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				198FFABB22F682160055FC3E /* DetailsPlacesView.swift */,
+				198FFAD422F7BE150055FC3E /* DetailsCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		198FFABF22F684770055FC3E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				198FFAC222F685290055FC3E /* Views */,
+				198FFAC022F685140055FC3E /* PlacesTableViewController.swift */,
+				198FFAD222F79D4C0055FC3E /* Models.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		198FFAC222F685290055FC3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				198FFAC322F6856A0055FC3E /* PlacesTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		198FFAC522F686310055FC3E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				198FFAC622F6863C0055FC3E /* Views */,
+				198FFAC922F686F50055FC3E /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		198FFAC622F6863C0055FC3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				198FFAC722F6865C0055FC3E /* LocationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		198FFACB22F6896A0055FC3E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				198FFACC22F6897C0055FC3E /* LocationServices.swift */,
+				198FFACE22F77A950055FC3E /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5D280F47223E0E72D6118A65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B1133BB50E6E7D72F558A17 /* Pods_StoreFinderApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		922FBD2DDBD5AA08599E622A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8B9561B5DDD5566FACC85E5 /* Pods-StoreFinderApp.debug.xcconfig */,
+				3D48ED1D0DF6DADCD59AD70B /* Pods-StoreFinderApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 198FFAB322F65F7F0055FC3E /* Build configuration list for PBXNativeTarget "StoreFinderApp" */;
 			buildPhases = (
+				9D971A7A463D7D0653EE47A6 /* [CP] Check Pods Manifest.lock */,
 				198FFA9A22F65F7D0055FC3E /* Sources */,
 				198FFA9B22F65F7D0055FC3E /* Frameworks */,
 				198FFA9C22F65F7D0055FC3E /* Resources */,
+				0D7004A016D18E9B04616ECD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +253,74 @@
 			files = (
 				198FFAAF22F65F7F0055FC3E /* LaunchScreen.storyboard in Resources */,
 				198FFAAC22F65F7F0055FC3E /* Assets.xcassets in Resources */,
+				198FFAD122F7984B0055FC3E /* Podfile in Resources */,
 				198FFAA722F65F7D0055FC3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D7004A016D18E9B04616ECD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFinderApp/Pods-StoreFinderApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoreFinderApp/Pods-StoreFinderApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreFinderApp/Pods-StoreFinderApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D971A7A463D7D0653EE47A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StoreFinderApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		198FFA9A22F65F7D0055FC3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				198FFACD22F6897C0055FC3E /* LocationServices.swift in Sources */,
+				198FFAD322F79D4C0055FC3E /* Models.swift in Sources */,
+				198FFAC122F685140055FC3E /* PlacesTableViewController.swift in Sources */,
 				198FFAA422F65F7D0055FC3E /* ViewController.swift in Sources */,
 				198FFAAA22F65F7D0055FC3E /* StoreFinderApp.xcdatamodeld in Sources */,
 				198FFAA222F65F7D0055FC3E /* AppDelegate.swift in Sources */,
+				198FFABE22F684080055FC3E /* DetailsPlacesViewController.swift in Sources */,
+				198FFACA22F686F50055FC3E /* LocationViewController.swift in Sources */,
+				198FFAB822F67EC90055FC3E /* BaseView.swift in Sources */,
+				198FFABC22F682160055FC3E /* DetailsPlacesView.swift in Sources */,
+				198FFAC822F6865C0055FC3E /* LocationView.swift in Sources */,
+				198FFACF22F77A960055FC3E /* NetworkService.swift in Sources */,
+				198FFAC422F6856A0055FC3E /* PlacesTableViewCell.swift in Sources */,
+				198FFAD522F7BE150055FC3E /* DetailsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +464,7 @@
 		};
 		198FFAB422F65F7F0055FC3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B9561B5DDD5566FACC85E5 /* Pods-StoreFinderApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +483,7 @@
 		};
 		198FFAB522F65F7F0055FC3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D48ED1D0DF6DADCD59AD70B /* Pods-StoreFinderApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
