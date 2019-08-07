@@ -18,7 +18,7 @@ moya
 Need to run pod install for AlamofireImage and Moya
 Add the following to your podfile the run pod install
 
-# AlamofireImage -
+# AlamofireImage 
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
@@ -30,7 +30,7 @@ Then, run the following command:
 
 $ pod install
 
-# Moya - 
+# Moya 
 pod 'Moya', '~> 13.0'
 or 
 pod 'Moya/RxSwift', '~> 13.0'
