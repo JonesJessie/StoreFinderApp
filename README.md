@@ -32,8 +32,12 @@ $ pod install
 
 # Moya 
 pod 'Moya', '~> 13.0'
+
 or 
+
 pod 'Moya/RxSwift', '~> 13.0'
+
 or
+
 pod 'Moya/ReactiveSwift', '~> 13.0'
 Then run pod install.
