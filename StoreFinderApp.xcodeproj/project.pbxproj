@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		193F14AA22FBF1EE006133E8 /* InternetFaceCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F14A922FBF1EE006133E8 /* InternetFaceCheck.swift */; };
 		198FFAA222F65F7D0055FC3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAA122F65F7D0055FC3E /* AppDelegate.swift */; };
 		198FFAA422F65F7D0055FC3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAA322F65F7D0055FC3E /* ViewController.swift */; };
 		198FFAA722F65F7D0055FC3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198FFAA522F65F7D0055FC3E /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		193F14A922FBF1EE006133E8 /* InternetFaceCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetFaceCheck.swift; sourceTree = "<group>"; };
 		198FFA9E22F65F7D0055FC3E /* StoreFinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreFinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198FFAA122F65F7D0055FC3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198FFAA322F65F7D0055FC3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				198FFACC22F6897C0055FC3E /* LocationServices.swift */,
 				198FFACE22F77A950055FC3E /* NetworkService.swift */,
+				193F14A922FBF1EE006133E8 /* InternetFaceCheck.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				198FFACD22F6897C0055FC3E /* LocationServices.swift in Sources */,
+				193F14AA22FBF1EE006133E8 /* InternetFaceCheck.swift in Sources */,
 				198FFAD322F79D4C0055FC3E /* Models.swift in Sources */,
 				198FFAC122F685140055FC3E /* PlacesTableViewController.swift in Sources */,
 				198FFAA422F65F7D0055FC3E /* ViewController.swift in Sources */,

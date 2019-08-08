@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qt9-WD-JZo">
-                                <rect key="frame" x="0.0" y="44" width="414" height="516.5"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="561.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-permission" translatesAutoresizingMaskIntoConstraints="NO" id="DLf-KA-Vca">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ba1-rm-6Bl">
-                                        <rect key="frame" x="0.0" y="448" width="414" height="68.5"/>
+                                        <rect key="frame" x="0.0" y="448" width="414" height="113.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app uses GPS Location Services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2F-48-KVo">
                                                 <rect key="frame" x="37.5" y="8" width="339" height="27.5"/>
@@ -34,7 +34,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="200" text="Please allow access to Location Services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlG-n8-d7m">
-                                                <rect key="frame" x="46.5" y="35.5" width="321.5" height="25"/>
+                                                <rect key="frame" x="46.5" y="35.5" width="321.5" height="70"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9YD-xt-VcG">
-                                <rect key="frame" x="0.0" y="736" width="414" height="106"/>
+                                <rect key="frame" x="0.0" y="781" width="414" height="61"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0l-bA-3Ns">
                                         <rect key="frame" x="32" y="8" width="350" height="45"/>
@@ -67,21 +67,6 @@
                                             <action selector="allowAction:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="lAc-LC-eok"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fx-Xz-mgo">
-                                        <rect key="frame" x="32" y="53" width="350" height="45"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="No, thank you">
-                                            <color key="titleColor" red="0.018645260479999998" green="0.4776622653" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="denyAction:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="E9n-7N-bFb"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <edgeInsets key="layoutMargins" top="8" left="32" bottom="8" right="32"/>
                             </stackView>
@@ -100,7 +85,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outlet property="allowButton" destination="h0l-bA-3Ns" id="F1I-cc-D3S"/>
-                            <outlet property="denyButton" destination="9Fx-Xz-mgo" id="N9h-nz-LNn"/>
                         </connections>
                     </view>
                     <connections>
@@ -186,29 +170,15 @@
                                                 <constraint firstItem="Ygl-cZ-6P5" firstAttribute="top" secondItem="Otm-sK-EFM" secondAttribute="top" id="sYv-cG-FLi"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLG-7K-aeQ">
-                                            <rect key="frame" x="355" y="15" width="35" height="35"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="gtP-68-3wA"/>
-                                                <constraint firstAttribute="height" constant="35" id="pdx-Ub-9eJ"/>
-                                            </constraints>
-                                            <state key="normal" title="Button" image="Heart_Button"/>
-                                            <connections>
-                                                <action selector="heartButtonPressedWithSender:" destination="2dY-TN-mt3" eventType="touchUpInside" id="46h-OF-ceQ"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Otm-sK-EFM" firstAttribute="leading" secondItem="j1z-tE-SR1" secondAttribute="leadingMargin" id="280-VY-goH"/>
                                         <constraint firstItem="Otm-sK-EFM" firstAttribute="bottom" secondItem="j1z-tE-SR1" secondAttribute="bottomMargin" id="DBB-qW-fO0"/>
-                                        <constraint firstItem="RLG-7K-aeQ" firstAttribute="top" secondItem="j1z-tE-SR1" secondAttribute="topMargin" constant="4" id="THS-Yd-NPP"/>
                                         <constraint firstItem="Otm-sK-EFM" firstAttribute="top" secondItem="j1z-tE-SR1" secondAttribute="topMargin" id="YFb-d5-6fC"/>
                                         <constraint firstItem="Otm-sK-EFM" firstAttribute="trailing" secondItem="j1z-tE-SR1" secondAttribute="trailingMargin" id="cGE-ec-NMO"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="RLG-7K-aeQ" secondAttribute="trailing" constant="4" id="gqf-Sk-aLs"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="heartButton" destination="RLG-7K-aeQ" id="fPk-Bb-gUu"/>
                                     <outlet property="locationLabel" destination="R1Y-bC-QfQ" id="kBH-r7-WsZ"/>
                                     <outlet property="makerImageView" destination="QKf-9L-hzd" id="koP-5T-EEb"/>
                                     <outlet property="placeNameLabel" destination="p3A-b8-Oer" id="k5T-o4-aNu"/>
@@ -434,7 +404,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Heart_Button" width="92" height="88"/>
         <image name="IC Attach Money 24px" width="11" height="18"/>
         <image name="IC Query Builder 24px" width="20" height="20"/>
         <image name="IC Star 24px" width="20" height="19"/>

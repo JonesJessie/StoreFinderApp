@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 @IBDesignable class LocationView: BaseView {
 
@@ -20,10 +21,6 @@ import UIKit
         didTapAllow?()
     }
     
-    @IBAction func denyAction(_ sender: UIButton) {
-        
-    }
-
-    
-
 }
+
+
