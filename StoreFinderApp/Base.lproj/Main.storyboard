@@ -177,14 +177,6 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
-                                                <button multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVD-rg-uP7">
-                                                    <rect key="frame" x="337" y="0.0" width="35" height="35"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="HeartButton"/>
-                                                    <connections>
-                                                        <action selector="heartButtonPressed" destination="2dY-TN-mt3" eventType="touchUpInside" id="0MV-6E-udU"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -194,16 +186,29 @@
                                                 <constraint firstItem="Ygl-cZ-6P5" firstAttribute="top" secondItem="Otm-sK-EFM" secondAttribute="top" id="sYv-cG-FLi"/>
                                             </constraints>
                                         </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLG-7K-aeQ">
+                                            <rect key="frame" x="355" y="15" width="35" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="35" id="gtP-68-3wA"/>
+                                                <constraint firstAttribute="height" constant="35" id="pdx-Ub-9eJ"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="Heart_Button"/>
+                                            <connections>
+                                                <action selector="heartButtonPressedWithSender:" destination="2dY-TN-mt3" eventType="touchUpInside" id="46h-OF-ceQ"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Otm-sK-EFM" firstAttribute="leading" secondItem="j1z-tE-SR1" secondAttribute="leadingMargin" id="280-VY-goH"/>
                                         <constraint firstItem="Otm-sK-EFM" firstAttribute="bottom" secondItem="j1z-tE-SR1" secondAttribute="bottomMargin" id="DBB-qW-fO0"/>
+                                        <constraint firstItem="RLG-7K-aeQ" firstAttribute="top" secondItem="j1z-tE-SR1" secondAttribute="topMargin" constant="4" id="THS-Yd-NPP"/>
                                         <constraint firstItem="Otm-sK-EFM" firstAttribute="top" secondItem="j1z-tE-SR1" secondAttribute="topMargin" id="YFb-d5-6fC"/>
                                         <constraint firstItem="Otm-sK-EFM" firstAttribute="trailing" secondItem="j1z-tE-SR1" secondAttribute="trailingMargin" id="cGE-ec-NMO"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="RLG-7K-aeQ" secondAttribute="trailing" constant="4" id="gqf-Sk-aLs"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="heartButton" destination="iVD-rg-uP7" id="0ET-fU-I2m"/>
+                                    <outlet property="heartButton" destination="RLG-7K-aeQ" id="fPk-Bb-gUu"/>
                                     <outlet property="locationLabel" destination="R1Y-bC-QfQ" id="kBH-r7-WsZ"/>
                                     <outlet property="makerImageView" destination="QKf-9L-hzd" id="koP-5T-EEb"/>
                                     <outlet property="placeNameLabel" destination="p3A-b8-Oer" id="k5T-o4-aNu"/>
@@ -429,7 +434,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HeartButton" width="92" height="88"/>
+        <image name="Heart_Button" width="92" height="88"/>
         <image name="IC Attach Money 24px" width="11" height="18"/>
         <image name="IC Query Builder 24px" width="20" height="20"/>
         <image name="IC Star 24px" width="20" height="19"/>
