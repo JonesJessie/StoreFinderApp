@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 protocol ListActions: class {
     func didTapCell(_ viewController : UIViewController, viewModel: PlacesListViewModel)
@@ -14,29 +15,51 @@ protocol ListActions: class {
 
 class PlacesTableViewController: UITableViewController {
     
-    
+
     var viewModels = [PlacesListViewModel]() {
         didSet {
             tableView.reloadData()
         }
     }
+    let spinner = SpinnerViewController()
     
     weak var delegete: ListActions?
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        showSpinner()
         if Reachability.isConnectedToNetwork() == true
         {
             print("Connected")
+            DispatchQueue.main.async {
+                self.hideSpinner()
+            }
         } else {
-            showAlert(title: "Cannot connect to Internet", message: "Device does not have internet connection, check to make sure the device is connected and try again.")
+            DispatchQueue.main.async {
+                self.hideSpinner()
+                self.showAlert(title: "Cannot connect to Internet", message: "Device does not have internet connection, check to make sure the device is connected and try again.")
+            }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    func showSpinner() {
+        addChild(spinner)
+        spinner.view.frame = view.frame
+        view.addSubview(spinner.view)
+        spinner.didMove(toParent: self)
+    }
+    
+    func hideSpinner() {
+        DispatchQueue.main.async {
+            self.spinner.willMove(toParent: nil)
+            self.spinner.view.removeFromSuperview()
+            self.spinner.removeFromParent()
+        }
     }
 
     func showAlert(title: String, message: String) {
@@ -48,8 +71,6 @@ class PlacesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        UserDefaults.standard.set(true, forKey: "tempstored")
-        UserDefaults.standard.synchronize()
         return viewModels.count
     }
 
@@ -62,20 +83,18 @@ class PlacesTableViewController: UITableViewController {
         return cell
     }
     
-    func deleteArrayItem(index: Int) {
-        viewModels.remove(at: index)
-    }
-
-    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
-            self.viewModels.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            UserDefaults.standard.set(false, forKey: "tempstored")
-            UserDefaults.standard.synchronize()
-            print(self.viewModels)
-        }
-        return[delete]
-    }
+//    func deleteArrayItem(index: Int) {
+//        viewModels.remove(at: index)
+//    }
+//
+//    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+//        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+//            self.viewModels.remove(at: indexPath.row)
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//            print(self.viewModels)
+//        }
+//        return[delete]
+//    }
     
     
     // MARK: - Delegate

@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		193F14AA22FBF1EE006133E8 /* InternetFaceCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F14A922FBF1EE006133E8 /* InternetFaceCheck.swift */; };
+		193F14AC22FCD5A3006133E8 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F14AB22FCD5A3006133E8 /* DataController.swift */; };
 		198FFAA222F65F7D0055FC3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAA122F65F7D0055FC3E /* AppDelegate.swift */; };
-		198FFAA422F65F7D0055FC3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAA322F65F7D0055FC3E /* ViewController.swift */; };
+		198FFAA422F65F7D0055FC3E /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAA322F65F7D0055FC3E /* SpinnerViewController.swift */; };
 		198FFAA722F65F7D0055FC3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198FFAA522F65F7D0055FC3E /* Main.storyboard */; };
 		198FFAAA22F65F7D0055FC3E /* StoreFinderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 198FFAA822F65F7D0055FC3E /* StoreFinderApp.xcdatamodeld */; };
 		198FFAAC22F65F7F0055FC3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198FFAAB22F65F7F0055FC3E /* Assets.xcassets */; };
@@ -31,9 +32,10 @@
 
 /* Begin PBXFileReference section */
 		193F14A922FBF1EE006133E8 /* InternetFaceCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetFaceCheck.swift; sourceTree = "<group>"; };
+		193F14AB22FCD5A3006133E8 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		198FFA9E22F65F7D0055FC3E /* StoreFinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreFinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198FFAA122F65F7D0055FC3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		198FFAA322F65F7D0055FC3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		198FFAA322F65F7D0055FC3E /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		198FFAA622F65F7D0055FC3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		198FFAA922F65F7D0055FC3E /* StoreFinderApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoreFinderApp.xcdatamodel; sourceTree = "<group>"; };
 		198FFAAB22F65F7F0055FC3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		198FFAC922F686F50055FC3E /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		198FFACC22F6897C0055FC3E /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
 		198FFACE22F77A950055FC3E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		198FFAD022F7984B0055FC3E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		198FFAD022F7984B0055FC3E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		198FFAD222F79D4C0055FC3E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		198FFAD422F7BE150055FC3E /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D48ED1D0DF6DADCD59AD70B /* Pods-StoreFinderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreFinderApp.release.xcconfig"; path = "Target Support Files/Pods-StoreFinderApp/Pods-StoreFinderApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,12 +95,13 @@
 				198FFACB22F6896A0055FC3E /* Services */,
 				198FFAB622F67EAF0055FC3E /* View */,
 				198FFAA122F65F7D0055FC3E /* AppDelegate.swift */,
-				198FFAA322F65F7D0055FC3E /* ViewController.swift */,
+				198FFAA322F65F7D0055FC3E /* SpinnerViewController.swift */,
 				198FFAA522F65F7D0055FC3E /* Main.storyboard */,
 				198FFAAB22F65F7F0055FC3E /* Assets.xcassets */,
 				198FFAAD22F65F7F0055FC3E /* LaunchScreen.storyboard */,
 				198FFAB022F65F7F0055FC3E /* Info.plist */,
 				198FFAA822F65F7D0055FC3E /* StoreFinderApp.xcdatamodeld */,
+				193F14AB22FCD5A3006133E8 /* DataController.swift */,
 			);
 			path = StoreFinderApp;
 			sourceTree = "<group>";
@@ -314,7 +317,7 @@
 				193F14AA22FBF1EE006133E8 /* InternetFaceCheck.swift in Sources */,
 				198FFAD322F79D4C0055FC3E /* Models.swift in Sources */,
 				198FFAC122F685140055FC3E /* PlacesTableViewController.swift in Sources */,
-				198FFAA422F65F7D0055FC3E /* ViewController.swift in Sources */,
+				198FFAA422F65F7D0055FC3E /* SpinnerViewController.swift in Sources */,
 				198FFAAA22F65F7D0055FC3E /* StoreFinderApp.xcdatamodeld in Sources */,
 				198FFAA222F65F7D0055FC3E /* AppDelegate.swift in Sources */,
 				198FFABE22F684080055FC3E /* DetailsPlacesViewController.swift in Sources */,
@@ -323,6 +326,7 @@
 				198FFABC22F682160055FC3E /* DetailsPlacesView.swift in Sources */,
 				198FFAC822F6865C0055FC3E /* LocationView.swift in Sources */,
 				198FFACF22F77A960055FC3E /* NetworkService.swift in Sources */,
+				193F14AC22FCD5A3006133E8 /* DataController.swift in Sources */,
 				198FFAC422F6856A0055FC3E /* PlacesTableViewCell.swift in Sources */,
 				198FFAD522F7BE150055FC3E /* DetailsCollectionViewCell.swift in Sources */,
 			);

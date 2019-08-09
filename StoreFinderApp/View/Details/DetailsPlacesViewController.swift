@@ -10,24 +10,29 @@ import UIKit
 import AlamofireImage
 import MapKit
 import CoreLocation
+import CoreData
 
 class DetailsPlacesViewController: UIViewController {
 
     
     @IBOutlet weak var detailsPlacesView: DetailsPlacesView?
+
+    
     var viewModel: DetailsViewModel? {
         didSet {
             updateView()
         }
     }
     
+    var likes = [Liked]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         detailsPlacesView?.collectionView?.register(DetailsCollectionViewCell.self, forCellWithReuseIdentifier: "ImageCell")
         detailsPlacesView?.collectionView?.dataSource = self
         detailsPlacesView?.collectionView?.delegate = self
+        likes = fetchHearts()
     }
 
     func updateView() {
@@ -48,6 +53,57 @@ class DetailsPlacesViewController: UIViewController {
         annotation.coordinate = coordinate
         detailsPlacesView?.mapView?.addAnnotation(annotation)
         detailsPlacesView?.mapView?.setRegion(region, animated: true)
+    }
+    
+    func fetchHearts() -> [Liked] {
+//        showSpinner()
+        let fetchRequest: NSFetchRequest<Liked> = Liked.fetchRequest()
+        do {
+            let result = try DataController.shared.viewContext.fetch(fetchRequest)
+            likes = result
+//            hideSpinner()
+        } catch {
+            print(error)
+//            hideSpinner()
+        }
+        for like in likes {
+            if like.name == title {
+                detailsPlacesView?.addToFavoritesButton.isSelected = true
+            }
+        }
+        return likes
+    }
+    
+    @IBAction func addOrDeleteFavorite(_ sender: UIButton) {
+            let liked: Liked = Liked(context: DataController.shared.viewContext)
+        detailsPlacesView!.addToFavoritesButton.isSelected = !detailsPlacesView!.addToFavoritesButton.isSelected
+            if detailsPlacesView!.addToFavoritesButton.isSelected {
+                liked.name = title
+                liked.heartPressed = true
+                do {
+                    try DataController.shared.viewContext.save()
+                } catch {
+                    showAlert(title: "Sorry", message: "Error while trying to Like.")
+                }
+                self.likes.append(liked)
+            } else {
+                for liked in likes {
+                    if liked.name == title {
+                        liked.heartPressed = false
+                        DataController.shared.viewContext.delete(liked)
+                    }
+                }
+                do {
+                    try DataController.shared.viewContext.save()
+                } catch {
+                    showAlert(title: "Sorry", message: "Error while to remove Like.")
+                }
+            }
+    }
+    func showAlert(title: String, message: String) {
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertVC, animated: true, completion: nil)
     }
 }
 

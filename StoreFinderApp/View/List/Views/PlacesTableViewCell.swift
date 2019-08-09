@@ -30,4 +30,9 @@ class PlacesTableViewCell: UITableViewCell {
         locationLabel.text = viewModel.formattedDistance
     }
     
+//    func configure(with favorite: Favorite) {
+//        placesImageView.image = UIImage(named: "Favorite")
+//        placeNameLabel.text = favorite.name
+//        locationLabel.text = favorite.formattedDistance
+//    }
 }

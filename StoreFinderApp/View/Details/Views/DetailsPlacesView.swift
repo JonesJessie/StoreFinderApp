@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreData
 
 @IBDesignable class DetailsPlacesView: BaseView {
     
@@ -18,8 +19,11 @@ import MapKit
     @IBOutlet weak var locationLabel: UILabel?
     @IBOutlet weak var ratingsLabel: UILabel?
     @IBOutlet weak var mapView: MKMapView?
-    
+    @IBOutlet weak var addToFavoritesButton: UIButton!
     @IBAction func handleControl(_ sender: UIPageControl) {
         
+        
+
     }
+
 }

@@ -12,7 +12,6 @@ import Foundation
 @IBDesignable class LocationView: BaseView {
 
     @IBOutlet weak var allowButton: UIButton!
-    @IBOutlet weak var denyButton: UIButton!
     
     
     var didTapAllow: (() -> Void)?
